@@ -17,12 +17,69 @@ const LandingHero = () => {
                     Open Account
                 </motion.button>
             </div>
-            <div className='flex flex-col sm: flex-1/2 justify-center items-center gap-2'>
-                <div className='p-4'>
-                    <HeroCard />
+            <div className='relative flex flex-col sm: flex-1/2 justify-center items-center gap-2'>
+                <div className='absolute top-2 -right-2'>
+                    <motion.img
+                        className=''
+                        src='src/assets/arrow-lg.png'
+                        alt='animated arrow'
+                        initial={{ scale: 0 }}
+                        animate={{ scale: 1 }}
+                        transition={{ duration: 2 }}
+                    ></motion.img>
                 </div>
+                <div className='absolute top-3 right-17'>
+                    <motion.img
+                        src='src/assets/arrow-xs.png'
+                        alt='animated arrow'
+                        initial={{ scale: 0 }}
+                        animate={{ scale: 1 }}
+                        transition={{ duration: 2 }}
+                    ></motion.img>
+                </div>
+                <div className='absolute top-20 -right-2'>
+                    <motion.img
+                        src='src/assets/arrow-xs.png'
+                        alt='animated arrow'
+                        initial={{ scale: 0 }}
+                        animate={{ scale: 1 }}
+                        transition={{ duration: 2 }}
+                    ></motion.img>
+                </div>
+                <div className='absolute top-30 right-10'>
+                    <motion.img
+                        src='src/assets/arrow-md.png'
+                        alt='animated arrow'
+                        initial={{ scale: 0 }}
+                        animate={{ scale: 1 }}
+                        transition={{ duration: 2 }}
+                    ></motion.img>
+                </div>
+                <div className='absolute top-35 right-0'>
+                    <motion.img
+                        src='src/assets/arrow-sm.png'
+                        alt='animated arrow'
+                        initial={{ scale: 0 }}
+                        animate={{ scale: 1 }}
+                        transition={{ duration: 2 }}
+                    ></motion.img>
+                </div>
+                <div className='absolute top-34 -right-10'>
+                    <motion.img
+                        src='src/assets/arrow-xs.png'
+                        alt='animated arrow'
+                        initial={{ scale: 0 }}
+                        animate={{ scale: 1 }}
+                        transition={{ duration: 2 }}
+                    ></motion.img>
+                </div>
+                <motion.div
+                 className='p-4'
+                 >
+                    <HeroCard />
+                </motion.div>
                 <div className='flex flex-row justify-center w-full sm:justify-end'>
-                    <CurrenciesPill/>
+                    <CurrenciesPill />
                 </div>
             </div>
         </div>

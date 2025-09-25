@@ -5,8 +5,13 @@ import FloatingCard from './FloatingCard'
 const HeroCard = () => {
     return (
         <div className="relative p-6 flex flex-col gap-2 bg-[linear-gradient(214.85deg,_rgba(26,26,26,0)_0%,_#1A1A1A_39.72%)] min-w-80 min-h-96 border border-neutral-800 rounded-md ">
-            <motion.div className='absolute top-0 left-0 sm:-translate-x-1/2 -translate-x-1/8 -translate-y-10'>
-                <FloatingCard/>
+            <motion.div
+                className='absolute top-0 left-0 sm:-translate-x-1/2 -translate-x-1/8 -translate-y-10'
+                initial={{ scale: 0 }}
+                animate={{ scale: 1 }}
+                transition={{ duration: 1 }}
+            >
+                <FloatingCard />
             </motion.div>
             <div className='flex flex-col gap-2 rounded-md'>
                 <motion.h3 className='text-sm font-medium'>Your Transactions</motion.h3>
