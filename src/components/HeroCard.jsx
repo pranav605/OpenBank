@@ -5,7 +5,7 @@ import FloatingCard from './FloatingCard'
 const HeroCard = () => {
     return (
         <div className="relative p-6 flex flex-col gap-2 bg-[linear-gradient(214.85deg,_rgba(26,26,26,0)_0%,_#1A1A1A_39.72%)] min-w-80 min-h-96 border border-neutral-800 rounded-md ">
-            <motion.div className='absolute top-0 left-0 -translate-x-1/2 -translate-y-10'>
+            <motion.div className='absolute top-0 left-0 sm:-translate-x-1/2 -translate-x-1/8 -translate-y-10'>
                 <FloatingCard/>
             </motion.div>
             <div className='flex flex-col gap-2 rounded-md'>
