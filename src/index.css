@@ -1,5 +1,16 @@
     /* src/index.css */
 @import "tailwindcss";
+
+.accent-text{
+  color: #CAFF33;
+}
+.accent-bg{
+  background-color:#CAFF33;
+}
+
+.dark-accent-bg{
+  background-color: #22251B;
+}
 /* :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
