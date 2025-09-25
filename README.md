@@ -21,3 +21,4 @@ If you are developing a production application, we recommend using TypeScript wi
 ## About the website
 
 This is a websote made for modern day banks with sleek UI and animations using motion. 
+Link to the Free fimga desing I used: https://www.figma.com/community/file/1298887728670431393
