@@ -12,7 +12,7 @@ const LandingHero = () => {
                 <motion.h1 className='text-3xl/10 font-medium'>
                     Welcome to OpenBank Empowering Your <motion.p className='accent-text'>Financial Journey</motion.p>
                 </motion.h1>
-                <motion.p className='text-sm p-2 md:pl-0 font-light'>At YourBank, our mission is to provide comprehensive banking solutions that empower individuals and businesses to achieve their financial goals. We are committed to delivering personalized and innovative services that prioritize our customers' needs.</motion.p>
+                <motion.p className='text-sm p-2 md:pl-0 font-light'>At OpenBank, our mission is to provide comprehensive banking solutions that empower individuals and businesses to achieve their financial goals. We are committed to delivering personalized and innovative services that prioritize our customers' needs.</motion.p>
                 <motion.button className='accent-bg text-black py-4 px-6 mt-4 rounded-4xl'>
                     Open Account
                 </motion.button>
