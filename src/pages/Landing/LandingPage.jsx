@@ -2,6 +2,7 @@ import React from 'react'
 import LandingHero from './LandingHero'
 import LandingProducts from './LandingProducts'
 import LandingUseCases from './LandingUseCases'
+import LandingFeatures from './LandingFeatures'
 
 export const LandingPage = () => {
   return (
@@ -9,6 +10,7 @@ export const LandingPage = () => {
         <LandingHero/>
         <LandingProducts/>
         <LandingUseCases/>
+        <LandingFeatures/>
     </div>
   )
 }
