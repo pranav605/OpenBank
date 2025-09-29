@@ -59,7 +59,7 @@ const LandingFAQ = () => {
                     Still you have any questions? Contact our Team via support@openbank.com
                 </motion.p>
             </div>
-            <AnimatePresence mode='wait'>
+            
                 <motion.div
                     key="faq-container"
                     animate={{
@@ -96,7 +96,6 @@ const LandingFAQ = () => {
                     </motion.div>
 
                 )}
-            </AnimatePresence>
         </div>
     )
 }
