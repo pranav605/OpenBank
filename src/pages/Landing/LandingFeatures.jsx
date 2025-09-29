@@ -5,7 +5,7 @@ const LandingFeatures = () => {
     const [activeTab, setActiveTab] = useState('Online Banking');
     const categories = ["Online Banking", "Financial Tools", "Customer Support"]
     return (
-        <div className='flex flex-col md:max-w-5xl mx-auto gap-8'>
+        <div className='flex flex-col md:p-0 p-2 md:max-w-5xl mx-auto gap-8 my-16'>
             <div className='flex flex-col md:justify-start md:items-start justify-center items-center md:text-start text-center'>
                 <motion.h2 className="accent-text text-3xl/10 font-medium">
                     <motion.span className='text-white'>Our</motion.span> Features
@@ -46,7 +46,7 @@ const LandingFeatures = () => {
                                     initial={{ opacity: 0, y: 20 }}
                                     animate={{ opacity: 1, y: 0 }}
                                     exit={{ opacity: 0, y: -20 }}
-                                    transition={{ duration: 0.4 }}
+                                    transition={{ duration: 0.2 }}
                                 >
                                     {FeatureCard(
                                         "24/7 Account Access",
@@ -74,7 +74,7 @@ const LandingFeatures = () => {
                                     initial={{ opacity: 0, y: 20 }}
                                     animate={{ opacity: 1, y: 0 }}
                                     exit={{ opacity: 0, y: -20 }}
-                                    transition={{ duration: 0.4 }}
+                                    transition={{ duration: 0.2 }}
                                 >
                                     {FeatureCard(
                                         "Budgeting & Expense Tracking",
@@ -102,7 +102,7 @@ const LandingFeatures = () => {
                                     initial={{ opacity: 0, y: 20 }}
                                     animate={{ opacity: 1, y: 0 }}
                                     exit={{ opacity: 0, y: -20 }}
-                                    transition={{ duration: 0.4 }}
+                                    transition={{ duration: 0.2 }}
                                 >
                                     {FeatureCard(
                                         "24/7 Live Chat",

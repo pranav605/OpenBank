@@ -32,7 +32,7 @@ const Footer = () => {
                     <MapPinIcon height={12} width={12} fill='#CAFF33' /> Canada
                 </motion.span>
             </motion.div>
-            <motion.div className='hidden md:flex flex-row w-4/5 justify-center items-center bg-neutral-900 p-4 rounded-full border border-neutral-700'>
+            <motion.div className='hidden md:flex flex-row w-4/5 justify-center items-center bg-neutral-900 p-4 rounded-full border border-neutral-700 mb-4'>
                 <motion.div className='flex flex-row justify-between w-full items-center'>
                     <motion.div className='flex flex-row items-center gap-2'>
                         <motion.a className='w-8 h-8 rounded-4xl accent-bg text-black flex gap-2 items-center justify-center'>

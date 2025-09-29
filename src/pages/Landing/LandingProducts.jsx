@@ -5,7 +5,7 @@ import { ArchiveBoxArrowDownIcon, BanknotesIcon, BriefcaseIcon } from '@heroicon
 const LandingProducts = () => {
     const [activeTab, setActiveTab] = useState('ind');
     return (
-        <div className='flex flex-col mt-8 mb-8 text-white w-full max-w-5xl mx-auto'>
+        <div className='flex flex-col my-16 text-white w-full max-w-5xl mx-auto md:p-0 p-2'>
             <div className='flex flex-col md:flex-row justify-center items-center text-center gap-8 md:text-start md:justify-between md:items-end w-full'>
                 <div className='flex flex-col gap-4'>
                     <motion.h1 className='text-white text-3xl/10 font-medium'>
