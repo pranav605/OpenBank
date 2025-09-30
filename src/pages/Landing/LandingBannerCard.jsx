@@ -14,7 +14,7 @@ const DOT_PATTERN_URL = `url("data:image/svg+xml;base64,${btoa(DOT_PATTERN_SVG)}
 // --- END DOT PATTERN DEFINITIONS ---
 const LandingBannerCard = () => {
     return (
-        <div className='flex relative text-center justify-center items-center md:text-start md:justify-start md:items-start flex-col w-full max-w-5xl my-16 md:p-0 p-2 gap-8'>
+        <div className='flex relative text-center justify-center items-center md:text-start md:justify-start md:items-start flex-col w-full max-w-5xl mb-16 md:p-0 p-2 gap-8'>
             <div className='flex flex-col md:flex-row md:justify-start md:items-center justify-center items-center text-center md:text-start border border-neutral-800 rounded-md p-8'>
                  <div
                     className="absolute top-0 left-0 w-full h-full rounded-tl-xl pointer-events-none"
