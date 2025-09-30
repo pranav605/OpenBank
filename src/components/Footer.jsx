@@ -7,7 +7,7 @@ const Footer = () => {
         <div className='flex flex-col bg-neutral-800/50 gap-8 justify-center items-center'>
             <motion.div className='flex flex-row pt-6 justify-center items-center gap-1'>
                 <motion.img
-                    src='src/assets/logo.png'
+                    src='/assets/logo.png'
                     height={12}
                     width={24}
                     initial={{ scale: 0 }}
@@ -36,13 +36,13 @@ const Footer = () => {
                 <motion.div className='flex flex-row justify-between w-full items-center'>
                     <motion.div className='flex flex-row items-center gap-2'>
                         <motion.a className='w-8 h-8 rounded-4xl accent-bg text-black flex gap-2 items-center justify-center'>
-                            <motion.img src='src/assets/x.png' alt='Link to X' height={20} width={20}></motion.img>
+                            <motion.img src='/assets/x.png' alt='Link to X' height={20} width={20}></motion.img>
                         </motion.a>
                         <motion.a className='w-8 h-8 rounded-4xl accent-bg text-black flex gap-2 items-center justify-center'>
-                            <motion.img src='src/assets/linkedin.png' alt='Link to linkedin' height={20} width={20}></motion.img>
+                            <motion.img src='/assets/linkedin.png' alt='Link to linkedin' height={20} width={20}></motion.img>
                         </motion.a>
                         <motion.a className='w-8 h-8 rounded-4xl accent-bg text-black flex gap-2 items-center justify-center'>
-                            <motion.img src='src/assets/instagram.png' alt='Link to instagram' height={20} width={20}></motion.img>
+                            <motion.img src='/assets/instagram.png' alt='Link to instagram' height={20} width={20}></motion.img>
                         </motion.a>
                     </motion.div>
                     <motion.p className='text-white/90 text-sm font-light'>OpenBank, develped by Sai Pranav Nishtala</motion.p>

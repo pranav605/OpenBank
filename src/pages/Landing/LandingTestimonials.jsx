@@ -39,7 +39,7 @@ const CarouselCard = ({ data, isCenter, style, cardData }) => {
 
                 {/* Image block (centered) */}
                 <div className={`p-3 rounded-xl w-fit bg-neutral-900`}>
-                    <motion.img height={32} width={32} src='src/assets/quotes.png' alt='Quotes image' />
+                    <motion.img height={32} width={32} src='/assets/quotes.png' alt='Quotes image' />
                 </div>
 
                 {/* Right side line */}

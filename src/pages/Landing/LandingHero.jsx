@@ -22,7 +22,7 @@ const LandingHero = () => {
                     <div className='absolute top-2 -right-2'>
                         <motion.img
                             className=''
-                            src='src/assets/arrow-lg.png'
+                            src='/assets/arrow-lg.png'
                             alt='animated arrow'
                             initial={{ scale: 0 }}
                             animate={{ scale: 1 }}
@@ -31,7 +31,7 @@ const LandingHero = () => {
                     </div>
                     <div className='absolute top-3 right-17'>
                         <motion.img
-                            src='src/assets/arrow-xs.png'
+                            src='/assets/arrow-xs.png'
                             alt='animated arrow'
                             initial={{ scale: 0 }}
                             animate={{ scale: 1 }}
@@ -40,7 +40,7 @@ const LandingHero = () => {
                     </div>
                     <div className='absolute top-20 -right-2'>
                         <motion.img
-                            src='src/assets/arrow-xs.png'
+                            src='/assets/arrow-xs.png'
                             alt='animated arrow'
                             initial={{ scale: 0 }}
                             animate={{ scale: 1 }}
@@ -49,7 +49,7 @@ const LandingHero = () => {
                     </div>
                     <div className='absolute top-30 right-10'>
                         <motion.img
-                            src='src/assets/arrow-md.png'
+                            src='/assets/arrow-md.png'
                             alt='animated arrow'
                             initial={{ scale: 0 }}
                             animate={{ scale: 1 }}
@@ -58,7 +58,7 @@ const LandingHero = () => {
                     </div>
                     <div className='absolute top-35 right-0'>
                         <motion.img
-                            src='src/assets/arrow-sm.png'
+                            src='/assets/arrow-sm.png'
                             alt='animated arrow'
                             initial={{ scale: 0 }}
                             animate={{ scale: 1 }}
@@ -67,7 +67,7 @@ const LandingHero = () => {
                     </div>
                     <div className='absolute top-34 -right-10'>
                         <motion.img
-                            src='src/assets/arrow-xs.png'
+                            src='/assets/arrow-xs.png'
                             alt='animated arrow'
                             initial={{ scale: 0 }}
                             animate={{ scale: 1 }}
