@@ -83,7 +83,7 @@ const LandingFAQ = () => {
                 {/* For mobile devices */}
                 <motion.div
                     key="faq-container-xs"
-                    className="grid grid-cols-1 gap-4 w-full"
+                    className="md:hidden grid grid-cols-1 gap-4 w-full"
                     style={{
                         // 'overflow: hidden' ensures the content beyond the maxHeight is clipped.
                         overflow: 'hidden',

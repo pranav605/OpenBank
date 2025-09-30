@@ -5,6 +5,7 @@ import LandingUseCases from './LandingUseCases'
 import LandingFeatures from './LandingFeatures'
 import LandingFAQ from './LandingFAQ'
 import LandingTestimonials from './LandingTestimonials'
+import LandingBannerCard from './LandingBannerCard'
 
 export const LandingPage = () => {
   return (
@@ -15,6 +16,7 @@ export const LandingPage = () => {
         <LandingFeatures/>
         <LandingFAQ/>
         <LandingTestimonials/>
+        <LandingBannerCard/>
     </div>
   )
 }
