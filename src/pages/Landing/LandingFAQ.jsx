@@ -62,6 +62,9 @@ const LandingFAQ = () => {
             
                 <motion.div
                     key="faq-container"
+                    initial={{
+                        maxHeight: COLLAPSED_HEIGHT,
+                    }}
                     animate={{
                         maxHeight: showAll ? EXPANDED_HEIGHT : COLLAPSED_HEIGHT,
                     }}
