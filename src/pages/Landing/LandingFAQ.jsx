@@ -69,7 +69,7 @@ const LandingFAQ = () => {
                         maxHeight: showAll ? EXPANDED_HEIGHT : COLLAPSED_HEIGHT,
                     }}
                     transition={{ duration: 0.5, ease: "easeInOut" }}
-                    className="grid md:grid-cols-2 grid-cols-1 gap-4 w-full"
+                    className="hidden md:grid md:grid-cols-2 grid-cols-1 gap-4 w-full"
                     style={{
                         // 'overflow: hidden' ensures the content beyond the maxHeight is clipped.
                         overflow: 'hidden',
@@ -80,9 +80,24 @@ const LandingFAQ = () => {
                     ))}
                 </motion.div>
 
+                {/* For mobile devices */}
+                <motion.div
+                    key="faq-container-xs"
+                    className="grid grid-cols-1 gap-4 w-full"
+                    style={{
+                        // 'overflow: hidden' ensures the content beyond the maxHeight is clipped.
+                        overflow: 'hidden',
+                    }}
+                >
+                    {faqs.map((d) => (
+                        <QuestionCard key={d.id} q={d.question} a={d.answer} />
+                    ))}
+                </motion.div>
+
+
                 {/* Button to toggle showing more */}
                 {faqs.length > 4 && (
-                    <motion.div layout className='flex flex-col w-full justify-center items-center md:text-start text-center'>
+                    <motion.div layout className='hidden md:flex flex-col w-full justify-center items-center md:text-start text-center'>
                         <button
                             className="-mt-20 px-8 py-4 border flex flex-row gap-2 items-center justify-center border-neutral-800 rounded-full bg-neutral-900 text-sm text-white text-light cursor-pointer"
                             onClick={() => setShowAll(!showAll)}
