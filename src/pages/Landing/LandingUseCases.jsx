@@ -5,7 +5,7 @@ import React from 'react'
 
 const LandingUseCases = () => {
     return (
-        <div className='flex text-center justify-center items-center md:text-start md:justify-start md:items-start flex-col w-full max-w-5xl'>
+        <div className='flex text-center justify-center items-center md:text-start md:justify-start md:items-start flex-col w-full max-w-5xl my-16 md:p-0 p-2'>
             <motion.h2 className="accent-text text-3xl/10 font-medium">
                 Use Cases
             </motion.h2>
