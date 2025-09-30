@@ -17,6 +17,8 @@ const cardData_bus = [
     { id: 12, name: 'StartupX', content: 'Seamless integration with Apple Pay and Google Pay for quick transactions.', },
     { id: 13, name: 'Global Traders', content: 'Flexible repayment terms and competitive rates for personal and business loans.' },
     { id: 14, name: 'BrightFuture Inc.', content: 'Diversified portfolios managed by experts, tailored to your risk tolerance.' },
+    { id: 15, name: 'JumpStart', content: 'Diversified portfolios managed by experts, tailored to your risk tolerance.' },
+    { id: 16, name: 'JustinTime', content: 'Diversified portfolios managed by experts, tailored to your risk tolerance.' },
 ];
 
 
@@ -60,8 +62,8 @@ const CarouselCard = ({ data, isCenter, style, cardData }) => {
 
 // --- MAIN CAROUSEL COMPONENT ---
 
-const HorizontalCarousel = ({cardData}) => {
-    const [activeIndex, setActiveIndex] = useState(0);
+const HorizontalCarousel = ({cardData, initialIndex}) => {
+    const [activeIndex, setActiveIndex] = useState(initialIndex);
     const totalCards = cardData.length;
 
     // Constants for positioning (adjust these for layout)
@@ -211,9 +213,9 @@ const LandingTestimonials = () => {
                 </div>
             </div>
             {activeTab === 'ind' ? 
-            <HorizontalCarousel cardData={cardData_ind}/>
+            <HorizontalCarousel cardData={cardData_ind} initialIndex={0}/>
             : 
-            <HorizontalCarousel cardData={cardData_bus}/>
+            <HorizontalCarousel cardData={cardData_bus} initialIndex={10}/>
             }
         </div>
     )
