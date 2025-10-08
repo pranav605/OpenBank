@@ -11,7 +11,7 @@ const Header = () => {
 
   return (
     <div className='flex relative text-center justify-center items-center flex-col w-full md:p-0 p-2 gap-8'>
-      <motion.div className='flex flex-row w-full justify-center items-center bg-neutral-900 p-4 rounded-full border border-neutral-700 mb-4 mt-8 max-w-5xl '>
+      <motion.div className='flex flex-row w-full justify-center items-center bg-neutral-900 p-4 rounded-full border border-neutral-700 mb-4 mt-8 max-w-xs sm:max-w-xs md:max-w-5xl '>
         <motion.div className='flex flex-row justify-between w-full items-center'>
           <motion.div className='flex flex-row justify-center items-center gap-1'>
             <motion.img
