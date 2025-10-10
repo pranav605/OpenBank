@@ -5,6 +5,7 @@ import React from "react"
 import { LandingPage } from "./pages/Landing/LandingPage"
 import InDevelopmentPage from "./pages/InDevelopment/InDevelopmentPage"
 import CareersPage from "./pages/Careers/CareersPage"
+import AboutPage from "./pages/About/AboutPage"
 function App() {
   return (
     <BrowserRouter>
@@ -12,6 +13,7 @@ function App() {
         <Route element={<MainLayout />}>
           <Route path="/" element={<LandingPage />} />
           <Route path="/careers" element={<CareersPage/>}/>
+          <Route path="/about" element={<AboutPage/>}/>
           <Route path='*' element={<InDevelopmentPage/>}/>
         </Route>
       </Routes>
