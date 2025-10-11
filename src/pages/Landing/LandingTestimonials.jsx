@@ -99,13 +99,13 @@ const HorizontalCarousel = ({cardData, initialIndex}) => {
                 <div className="hidden absolute inset-y-0 w-full md:flex justify-between items-center z-20 pointer-events-none">
                     <button
                         onClick={goToPrev}
-                        className="p-3 bg-neutral-700/50 hover:bg-neutral-700 rounded-full shadow-lg transition duration-300 pointer-events-auto backdrop-blur-sm -ml-8"
+                        className="p-3 bg-neutral-700/50 hover:bg-neutral-700 rounded-full shadow-lg transition duration-300 pointer-events-auto backdrop-blur-sm -ml-4"
                     >
                         <ChevronLeftIcon className="w-6 h-6 text-white" />
                     </button>
                     <button
                         onClick={goToNext}
-                        className="p-3 bg-neutral-700/50 hover:bg-neutral-700 rounded-full shadow-lg transition duration-300 pointer-events-auto backdrop-blur-sm -mr-8"
+                        className="p-3 bg-neutral-700/50 hover:bg-neutral-700 rounded-full shadow-lg transition duration-300 pointer-events-auto backdrop-blur-sm -mr-4"
                     >
                         <ChevronRightIcon className="w-6 h-6 text-white" />
                     </button>
