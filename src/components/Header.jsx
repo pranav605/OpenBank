@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { AnimatePresence, motion } from 'motion/react'
 import { Bars3BottomLeftIcon, XMarkIcon } from '@heroicons/react/24/solid';
+import { Link } from 'react-router-dom';
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -21,13 +22,13 @@ const Header = () => {
               initial={{ scale: 0 }}
               animate={{ scale: 1 }}
             ></motion.img>
-            <motion.a href='/' className='text-sm font-normal text-white'>OpenBank</motion.a>
+            <Link to='/' className='text-sm font-normal text-white'>OpenBank</Link>
           </motion.div>
           <motion.div className='hidden md:flex flex-row gap-4 justify-center items-center'>
-            <motion.a href='/' className='text-white/90 text-sm font-light cursor-pointer hover:text-white transition-colors'>Home</motion.a>
-            <motion.a href='/careers' className='text-white/90 text-sm font-light cursor-pointer hover:text-white transition-colors'>Careers</motion.a>
-            <motion.a href='/about' className='text-white/90 text-sm font-light cursor-pointer hover:text-white transition-colors'>About</motion.a>
-            <motion.a href='/security' className='text-white/90 text-sm font-light cursor-pointer hover:text-white transition-colors'>Security</motion.a>
+            <Link to='/' className='text-white/90 text-sm font-light cursor-pointer hover:text-white transition-colors'>Home</Link>
+            <Link to='/careers' className='text-white/90 text-sm font-light cursor-pointer hover:text-white transition-colors'>Careers</Link>
+            <Link to='/about' className='text-white/90 text-sm font-light cursor-pointer hover:text-white transition-colors'>About</Link>
+            <Link to='/security' className='text-white/90 text-sm font-light cursor-pointer hover:text-white transition-colors'>Security</Link>
           </motion.div>
           <motion.div className='hidden md:flex flex-row gap-2 items-center'>
             <motion.button className='text-sm text-white py-2 px-3 rounded-full border border-transparent hover:border-neutral-600 transition-all'>
@@ -61,10 +62,10 @@ const Header = () => {
               // The inner background panel
             >
               <motion.ul className='flex flex-col gap-1 list-none p-4 rounded-xl border border-neutral-700 bg-neutral-900 shadow-2xl'>
-                <motion.li className='p-2 hover:bg-neutral-800 rounded-lg' onClick={() => setIsOpen(false)}><motion.a href='/' className='text-white text-base font-light block'>Home</motion.a></motion.li>
-                <motion.li className='p-2 hover:bg-neutral-800 rounded-lg' onClick={() => setIsOpen(false)}><motion.a href='/careers' className='text-white text-base font-light block'>Careers</motion.a></motion.li>
-                <motion.li className='p-2 hover:bg-neutral-800 rounded-lg' onClick={() => setIsOpen(false)}><motion.a href='/about' className='text-white text-base font-light block'>About</motion.a></motion.li>
-                <motion.li className='p-2 hover:bg-neutral-800 rounded-lg' onClick={() => setIsOpen(false)}><motion.a href='/security' className='text-white text-base font-light block'>Security</motion.a></motion.li>
+                <motion.li className='p-2 hover:bg-neutral-800 rounded-lg' onClick={() => setIsOpen(false)}><Link to='/' className='text-white text-base font-light block'>Home</Link></motion.li>
+                <motion.li className='p-2 hover:bg-neutral-800 rounded-lg' onClick={() => setIsOpen(false)}><Link to='/careers' className='text-white text-base font-light block'>Careers</Link></motion.li>
+                <motion.li className='p-2 hover:bg-neutral-800 rounded-lg' onClick={() => setIsOpen(false)}><Link to='/about' className='text-white text-base font-light block'>About</Link></motion.li>
+                <motion.li className='p-2 hover:bg-neutral-800 rounded-lg' onClick={() => setIsOpen(false)}><Link to='/security' className='text-white text-base font-light block'>Security</Link></motion.li>
                 <motion.li className='flex flex-col gap-2 pt-4'>
                     <motion.button className='w-full text-sm text-white py-2 rounded-full border border-neutral-700 hover:bg-neutral-800 transition-colors'>
                         Sign up
