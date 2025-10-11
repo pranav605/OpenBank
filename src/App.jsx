@@ -7,6 +7,8 @@ import InDevelopmentPage from "./pages/InDevelopment/InDevelopmentPage"
 import CareersPage from "./pages/Careers/CareersPage"
 import AboutPage from "./pages/About/AboutPage"
 import SecurityPage from "./pages/Security/SecurityPage"
+import LoginPage from "./pages/Login/LoginPage"
+import SignUpPage from "./pages/SignUp/SignUpPage"
 function App() {
   return (
     <BrowserRouter>
@@ -16,6 +18,8 @@ function App() {
           <Route path="/careers" element={<CareersPage/>}/>
           <Route path="/about" element={<AboutPage/>}/>
           <Route path="/security" element={<SecurityPage/>}/>
+          <Route path="/login" element={<LoginPage/>}/>
+          <Route path="/signup" element={<SignUpPage/>}/>
           <Route path='*' element={<InDevelopmentPage/>}/>
         </Route>
       </Routes>

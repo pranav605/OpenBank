@@ -31,12 +31,12 @@ const Header = () => {
             <Link to='/security' className='text-white/90 text-sm font-light cursor-pointer hover:text-white transition-colors'>Security</Link>
           </motion.div>
           <motion.div className='hidden md:flex flex-row gap-2 items-center'>
-            <motion.button className='text-sm text-white py-2 px-3 rounded-full border border-transparent hover:border-neutral-600 transition-all'>
+            <Link to={'/signup'} className='text-sm text-white py-2 px-3 rounded-full border border-transparent hover:border-neutral-600 transition-all'>
               Sign up
-            </motion.button>
-            <motion.button className='accent-bg text-sm text-black py-2 px-3 rounded-full transition-colors cursor-pointer'>
+            </Link>
+            <Link to={'/login'} className='accent-bg text-sm text-black py-2 px-3 rounded-full transition-colors cursor-pointer'>
               Login
-            </motion.button>
+            </Link>
           </motion.div>
            {/* Mobile Menu Icon (Visible on mobile, Hidden on desktop) */}
           <motion.div className='flex md:hidden'>
